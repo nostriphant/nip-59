@@ -1,0 +1,35 @@
+{
+    "name": "nostriphant/nip-59",
+    "description": "Nostr NIP-59 implementation in PHP",
+    "type": "library",
+    "require": {
+        "php": "^8.3",
+        "nostriphant/nip-44": "^1.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.35"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "nostriphant\\NIP59\\": "src/",
+            "nostriphant\\NIP59Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rik Meijer",
+            "email": "rik@nostriphant.dev"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": [
+            "./vendor/bin/pest"
+        ]
+    }
+}

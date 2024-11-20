@@ -1,1 +1,8 @@
 /nbproject/private/
+/data/*
+/logs/*
+/vendor/
+.phpunit.cache
+.env
+.DS_Store
+.DS_Store
