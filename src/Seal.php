@@ -8,12 +8,6 @@ use nostriphant\NIP01\Event;
 use nostriphant\NIP44\Encrypt,
     nostriphant\NIP44\Decrypt;
 
-/**
- * Works with NIP-59 kind 13 events
- * @see https://github.com/nostr-protocol/nips/blob/master/59.md
- *
- * @author Rik Meijer <hello@rikmeijer.nl>
- */
 class Seal {
     
     static function close(Key $sender_private_key, string $recipient_pubkey, Rumor $event) : Event {

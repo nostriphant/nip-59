@@ -26,8 +26,8 @@ $gift = Gift::wrap($recipient_pubkey, $seal);
 
 // sending ...
 
-$seal = Gift::unwrap($recipient_key, $gift->pubkey, $gift->content);
-$private_message = Seal::open($recipient_key, $seal->pubkey, $seal->content);
+$seal = Gift::unwrap($recipient_key, $gift);
+$private_message = Seal::open($recipient_key, $seal);
 
 assert($private_message->content === 'Hello!!');
 
