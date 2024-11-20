@@ -23,9 +23,9 @@ class Gift {
         return $gift($randomKey);
     }
     
-    static function unwrap(Key $recipient_key, string $sender_pubkey, string $gift): Event {
-        $decrypter = Decrypt::make($recipient_key, $sender_pubkey);
-        return Event::__set_state(Nostr::decode($decrypter($gift)));
+    static function unwrap(Key $recipient_key, Event $gift): Event {
+        $decrypter = Decrypt::make($recipient_key, $gift->pubkey);
+        return Event::__set_state(Nostr::decode($decrypter($gift->content)));
     }
     
 }

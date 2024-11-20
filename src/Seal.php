@@ -28,8 +28,8 @@ class Seal {
         return $seal($sender_private_key);
     }
     
-    static function open(Key $recipient_private_key, string $sender_pubkey, string $seal): Rumor {
-        $decrypter = Decrypt::make($recipient_private_key, $sender_pubkey);
-        return Rumor::__set_state(Nostr::decode($decrypter($seal)));
+    static function open(Key $recipient_private_key, Event $seal): Rumor {
+        $decrypter = Decrypt::make($recipient_private_key, $seal->pubkey);
+        return Rumor::__set_state(Nostr::decode($decrypter($seal->content)));
     }
 }
