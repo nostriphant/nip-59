@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "18b1c1ed3dc9666d1cd8b979976b4c74",
+    "content-hash": "3e25e43355f5a42ba2053822f0675513",
     "packages": [
         {
             "name": "nostriphant/functional",
@@ -52,7 +52,7 @@
         },
         {
             "name": "nostriphant/nip-01",
-            "version": "1.9.2",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nostriphant/nip-01.git",
@@ -97,27 +97,27 @@
             "description": "Nostr NIP-01 implementation in PHP",
             "support": {
                 "issues": "https://github.com/nostriphant/nip-01/issues",
-                "source": "https://github.com/nostriphant/nip-01/tree/1.9.2"
+                "source": "https://github.com/nostriphant/nip-01/tree/2.0.0"
             },
             "time": "2025-10-15T13:22:38+00:00"
         },
         {
             "name": "nostriphant/nip-44",
-            "version": "1.4",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nostriphant/nip-44.git",
-                "reference": "c2e0b44be78e08481d392e9cfb03ece2df6b3cb5"
+                "reference": "c3726a7aad932966f15bcd2a59a39f496588485c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nostriphant/nip-44/zipball/c2e0b44be78e08481d392e9cfb03ece2df6b3cb5",
-                "reference": "c2e0b44be78e08481d392e9cfb03ece2df6b3cb5",
+                "url": "https://api.github.com/repos/nostriphant/nip-44/zipball/c3726a7aad932966f15bcd2a59a39f496588485c",
+                "reference": "c3726a7aad932966f15bcd2a59a39f496588485c",
                 "shasum": ""
             },
             "require": {
                 "ext-sodium": "*",
-                "nostriphant/nip-01": "^1.0",
+                "nostriphant/nip-01": "^2.0",
                 "php": "^8.3",
                 "phpseclib/phpseclib": "^3.0"
             },
@@ -144,9 +144,9 @@
             "description": "Nostr NIP-44 implementation in PHP",
             "support": {
                 "issues": "https://github.com/nostriphant/nip-44/issues",
-                "source": "https://github.com/nostriphant/nip-44/tree/1.4"
+                "source": "https://github.com/nostriphant/nip-44/tree/2.0.1"
             },
-            "time": "2024-11-20T14:28:32+00:00"
+            "time": "2025-10-15T13:33:24+00:00"
         },
         {
             "name": "paragonie/constant_time_encoding",
