@@ -3,7 +3,7 @@
 use nostriphant\NIP59\Gift;
 use nostriphant\NIP01\Key;
 use nostriphant\NIP59\Seal;
-use nostriphant\NIP59\Rumor;
+use nostriphant\NIP01\Rumor;
 
 it('wraps message in a seal and seal in a gift', function () {
     $sender_key = Key::fromHex('a71a415936f2dd70b777e5204c57e0df9a6dffef91b3c78c1aa24e54772e33c3');

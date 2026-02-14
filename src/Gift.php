@@ -5,6 +5,7 @@ namespace nostriphant\NIP59;
 use nostriphant\NIP01\Nostr;
 use nostriphant\NIP01\Key;
 use nostriphant\NIP01\Event;
+use nostriphant\NIP01\Rumor;
 use nostriphant\NIP44\Encrypt,
     nostriphant\NIP44\Decrypt;
 
