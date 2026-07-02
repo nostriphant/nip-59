@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "php": "^8.3",
-        "nostriphant/nip-44": "^2.0"
+        "nostriphant/nip-44": "^3.0"
     },
     "require-dev": {
         "pestphp/pest": "^2.35"
@@ -12,7 +12,11 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "nostriphant\\NIP59\\": "src/",
+            "nostriphant\\NIP59\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
             "nostriphant\\NIP59Tests\\": "tests/"
         }
     },
