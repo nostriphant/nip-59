@@ -13,6 +13,7 @@ it('wraps message in a seal and seal in a gift', function () {
 
     $message = new Rumor(
             created_at: time(),
+            pubkey: $recipient_pubkey,
             kind: 14,
             content: 'Hello!!',
             tags: [['p', $recipient_pubkey]]
@@ -29,6 +30,7 @@ it('wraps message in a seal and seal in a gift', function () {
     expect($seal->content)->toBeString();
 
     $private_message = Seal::open($recipient_key, $seal);
+    expect($private_message)->toHaveKey('id');
     expect($private_message)->toHaveKey('content');
     expect($private_message->content)->toBe('Hello!!');
 });

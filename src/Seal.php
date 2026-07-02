@@ -11,12 +11,12 @@ use nostriphant\NIP44\Encrypt,
 
 class Seal {
 
-    static function close(Key $sender_private_key, string $recipient_pubkey, Rumor $event) : Event {
+    static function close(Key $sender_private_key, string $recipient_pubkey, Rumor $rumor): Event {
         $encrypter = Encrypt::make($sender_private_key, $recipient_pubkey);
-        $seal = new Rumor(
+        $seal = new Event\Unsigned(
                 created_at: mktime(rand(0, 23), rand(0, 59), rand(0, 59)),
                 kind: 13,
-                content: $encrypter(Nostr::encode(get_object_vars($event))),
+                content: $encrypter(Nostr::encode($rumor())),
                 tags: []
         );
         return $seal($sender_private_key);

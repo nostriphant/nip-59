@@ -14,7 +14,7 @@ class Gift {
     static function wrap(string $recipient_pubkey, Event $event) : Event {
         $randomKey = Key::generate();
         $encrypter = Encrypt::make($randomKey, $recipient_pubkey);
-        $gift = new Rumor(
+        $gift = new Event\Unsigned(
                 created_at: time() - rand(0, 60 * 60 * 48),
                 kind: 1059,
                 content: $encrypter(Nostr::encode(get_object_vars($event))),
